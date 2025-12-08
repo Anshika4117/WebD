@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Product Grid</title>
+  <content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" href="exp9.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #cbc8c8;
+    
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 20px;
+    padding: 20px;
+
+
+}
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    
+}
+.product-card : hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none
+
+}
+}
+/*mobile view */
+@media (max-width:600px) {
+    .product-card img {
+        height: 150px;
+    }
+    .product-card h3 {
+        font-size: 16px;
+    }
+    .product-card p {
+        font-size: 12px;
+    }
+}
+    </style>
+<h1>Responsive Product Grid</h1>
+
+<div class="product-grid">
+    <div class="product-card">
+    <img src="apple earpods.png" alt="Apple Earbuds">
+    <h3>Product 1</h3>
+    <p>High-quality item with great features</p>
+    <div class="price">₹499</div>
+    </div>
+
+
+    <div class="product-card">
+    <img src="" alt="">
+    <h3>Product 2</h3>
+    <p>Durable and stylish for daily use</p>
+    <div class="price">₹799</div>
+    </div>
+
+
+    <div class="product-card">
+    <img src="" alt="">
+    <h3> Product 3</h3>
+    <p>Lightweight and comfortable </p>
+    <div class="price">₹1,299</div>
+    </div>
+
+    <div class="product-card">
+    <img src="" alt="">
+    <h3> Product 4</h3>
+    <p>Trendy design with premium quality</p>
+    <div class="price">₹999</div>
+    </div>
+</div>
+<h1>By Anshika Singh</h1> 
+    <h2>2025B01010852</h2>
+ 
+</body>
+</html>
