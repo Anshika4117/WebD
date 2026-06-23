@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Myntra UI Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 40px;
+    border-bottom:1px solid #eee;
+    background:#fff;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#ff3f6c;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#282c3f;
+    font-size:14px;
+    font-weight:600;
+}
+
+.search-box{
+    flex:1;
+    margin:0 40px;
+}
+
+.search-box input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:4px;
+}
+
+.icons span{
+    margin-left:20px;
+    font-size:14px;
+}
+
+/* OFFER STRIP */
+.offer{
+    background:#fdd835;
+    padding:12px;
+    text-align:center;
+    font-weight:bold;
+    color:#c2185b;
+}
+
+/* HERO BANNER */
+.hero{
+    margin:20px;
+    height:100px;
+}
+
+.hero img{
+    width:100%;
+    border-radius:6px;
+}
+
+/* BRAND CARDS */
+.brands{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    overflow-x:auto;
+}
+
+.brand-card{
+    min-width:100px;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.05);
+    text-align:center;
+}
+
+.brand-card img{
+    width:30%;
+    border-radius:8px 8px 0 0;
+}
+
+.brand-card p{
+    padding:10px;
+    font-weight:bold;
+}
+
+/* GLOBAL STYLES */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+header{
+    display:flex;
+    align-items:center;
+    padding:15px 40px;
+    border-bottom:1px solid #ddd;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff3f6c;
+}
+nav{
+    margin-left:40px;
+}
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+.search{
+    margin-left:auto;
+}
+.search input{
+    padding:8px 15px;
+    width:300px;
+}
+
+/* SUPER SAVER */
+.super{
+    text-align:center;
+    background:#fff3f3;
+    padding:30px 0;
+}
+.super h1{
+    color:#ff6a00;
+    font-size:42px;
+}
+.super p{
+    font-size:18px;
+    color:#444;
+}
+
+/* DEAL CARDS */
+.deals{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
+.card{
+    width:180px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    text-align:center;
+}
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+.card h3{
+    background:#ff3f6c;
+    color:white;
+    padding:8px;
+    font-size:14px;
+}
+
+/* CATEGORY */
+.category-title{
+    text-align:center;
+    font-size:36px;
+    font-weight:bold;
+    margin:40px 0;
+    color:#7b2cbf;
+}
+.categories{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+    padding:20px 40px;
+}
+.cat{
+    text-align:center;
+    background:#f5f5ff;
+    padding:10px;
+    border-radius:10px;
+}
+.cat img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.cat h4{
+    margin-top:10px;
+}
+.cat p{
+    font-weight:bold;
+    color:#ff3f6c;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+header{
+    display:flex;
+    align-items:center;
+    padding:15px 40px;
+    border-bottom:1px solid #ddd;
+    background:#fff;
+}
+.logo img{
+    width:50px;
+}
+nav{
+    margin-left:30px;
+}
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#282c3f;
+    font-weight:600;
+    font-size:14px;
+}
+.search{
+    margin-left:auto;
+    width:400px;
+}
+.search input{
+    width:100%;
+    padding:10px 15px;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+.icons{
+    display:flex;
+    gap:25px;
+    margin-left:30px;
+    font-size:14px;
+}
+
+/* TOP OFFER STRIP */
+.offer{
+    background:#ffd400;
+    text-align:center;
+    padding:10px;
+    font-weight:700;
+    color:#d4006a;
+}
+
+/* HERO SECTION (FIRST IMAGE APPLIED HERE) */
+.hero{
+    height:420px;
+    background:url("first-image.jpg") no-repeat center/cover; /* <-- put first image path */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* SALE CARD OVER IMAGE */
+.sale-box{
+    background:rgba(255,255,255,0.9);
+    padding:30px 50px;
+    border-radius:10px;
+    text-align:center;
+}
+.sale-box h1{
+    font-size:42px;
+    color:#7b2cbf;
+}
+.sale-box span{
+    color:#e91e63;
+}
+.sale-box p{
+    margin-top:10px;
+    font-weight:600;
+}
+.buttons{
+    margin-top:20px;
+}
+.buttons button{
+    padding:10px 20px;
+    margin:0 10px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:#ff3f6c;
+    color:#fff;
+    font-weight:600;
+}
+
+/* BRAND STRIP */
+.brands{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px;
+    background:#f5f5f5;
+}
+.brands img{
+    height:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="/Myntralogo.png" alt="Myntra Logo">
+    </div>
+    <nav>
+        <a href="#">MEN</a>
+        <a href="#">WOMEN</a>
+        <a href="#">KIDS</a>
+        <a href="#">HOME</a>
+        <a href="#">BEAUTY</a>
+    </nav>
+    <div class="search">
+        <input type="text" placeholder="Search for products, brands and more">
+    </div>
+    <div class="icons">
+        <div><a href="sign in tag.html">Profile</a></div>
+        <div>Wishlist</div>
+        <div>Bag</div>
+    </div>
+</header>
+
+<div class="offer">
+    FLAT ₹500 OFF • On Your 1st Purchase via Myntra App
+</div>
+<div class="banner">
+    <img src="Myntra banner.png" alt="Banner" style="width:100%; height:auto;">
+</div>
+</section>
+<section class="super">
+    <h1>SUPER SAVER</h1>
+    <p>Prices Slashed, Style Doubled</p>
+</section>
+
+<section class="deals">
+    <div class="card">
+        <img src="/face cleaner.png">
+        <h3>UNDER ₹149<br>Face Cleansers</h3>
+    </div>
+    <div class="card">
+        <img src="/hair care.png">
+        <h3>UNDER ₹449<br>Hair Care</h3>
+    </div>
+    <div class="card">
+        <img src="/makeup.png">
+        <h3>UNDER ₹299<br>Makeup</h3>
+    </div>
+    <div class="card">
+        <img src="/styling.png">
+        <h3>UNDER ₹499<br>Styling</h3>
+    </div>
+    <div class="card">
+        <img src="/lip balm.png">
+        <h3>UNDER ₹149<br>Lip Balms</h3>
+    </div>
+</section>
+
+<h2 class="category-title">SHOP BY CATEGORY</h2>
+
+<section class="categories">
+    <div class="cat">
+        <img src="/home decor.png">
+        <h4>Home Decor</h4>
+        <p>50-80% OFF</p>
+    </div>
+    <div class="cat">
+        <img src="/casual wear.png">
+        <h4>Casual Wear</h4>
+        <p>40-80% OFF</p>
+    </div>
+    <div class="cat">
+        <img src="/bag.png">
+        <h4>Bags</h4>
+        <p>30-70% OFF</p>
+    </div>
+    <div class="cat">
+        <img src="/womens activewear.png">
+        <h4>Women's Activewear</h4>
+        <p>30-70% OFF</p>
+    </div>
+    <div class="cat">
+        <img src="/western wear.png">
+        <h4>Western Wear</h4>
+        <p>40-80% OFF</p>
+    </div>
+    <div class="cat">
+        <img src="/watches.png">
+        <h4>Watches</h4>
+        <p>UP TO 80% OFF</p>
+    </div>
+</section>
+
+</body>
+</html>
+
+
